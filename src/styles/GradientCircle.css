@@ -1,0 +1,5 @@
+.circle {
+    max-width: 100%;
+    border-radius: 50%;
+    background-image: radial-gradient(rgba(118, 60, 172, 0.8) 0%, rgba(50, 15, 133, 0) 70%);
+}

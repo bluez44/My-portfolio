@@ -1,0 +1,15 @@
+@keyframes orbit {
+    0% { offset-distance: 0%; }
+    50% { offset-distance: 100%; }
+    100% { offset-distance: 0%; }
+  }
+  
+  .orbit-icon {
+    offset-path: path("M 100 110 A 300 105 0 1 0 500 110");
+    offset-distance: 0%;
+    top: 150;
+    left: 110;
+    position: absolute;
+    animation: orbit 10s linear infinite;
+  }
+  

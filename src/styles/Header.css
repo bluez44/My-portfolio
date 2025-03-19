@@ -1,0 +1,12 @@
+header {
+    background-color: rgba(26, 11, 46, .8);
+}
+
+.group_link {
+    transition: background-color .3s;
+}
+
+.group_link:hover {
+    background-color: rgba(51, 22, 88, .8);
+    color: #fff;
+}
