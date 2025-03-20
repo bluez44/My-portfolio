@@ -95,13 +95,13 @@ function Content() {
                 <p className='fs-1 pb-64'>My project</p>
 
                 <div className="position-relative mb-128 text-start">
-                    <p className='text-project fs-6'>Featured project</p>
-                    <p className='fs-4'>Example project</p>
+                    <p className='position-relative z-1 text-project fs-6'>Featured project</p>
+                    <p className='position-relative z-1 fs-4'>Example project</p>
                     <div className='mw-100 position-absolute start-0 start-md-25 start-xl-50 top-50 translate-middle-y d-inline-block z-0'>
                         <GradientCircle width={702} height={620}/>
                         <img className='position-absolute top-50 start-50 translate-middle d-none d-md-block' src={Logo} width={100} alt="logo" />
                     </div>
-                    <div className='my-4 position-relative z-10 text-start d-flex justify-content-start' >
+                    <div className='my-4 position-relative z-1 text-start d-flex justify-content-start' >
                         <p className='p-4 bg-secondary rounded-3 w-100 w-md-50' style={{"--bs-bg-opacity": 0.2}}>A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more.</p>
                     </div>
                     <div className='d-flex gap-3 justify-content-start'>
@@ -111,9 +111,9 @@ function Content() {
                 </div>
 
                 <div className="position-relative mb-128 text-end">
-                    <p className='text-project fs-6'>Featured project</p>
-                    <p className='fs-4'>Example project</p>
-                    <div className='my-4 position-relative z-10 text-start d-flex justify-content-end' >
+                    <p className='position-relative z-1 text-project fs-6'>Featured project</p>
+                    <p className='position-relative z-1 fs-4'>Example project</p>
+                    <div className='my-4 position-relative z-1 text-start d-flex justify-content-end' >
                         <p className='p-4 bg-secondary rounded-3 w-100 w-md-50' style={{"--bs-bg-opacity": 0.2}}>A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more.</p>
                     </div>
                     <div className='mw-100 position-absolute end-0 end-md-25 end-xl-50 top-50 translate-middle-y d-inline-block z-0'>
