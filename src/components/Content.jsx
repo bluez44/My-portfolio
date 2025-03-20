@@ -68,76 +68,76 @@ function Content() {
   ]
 
   return (
-    <div className='bg-[#11071F]'>
+    <div className='bg-portfolio'>
         <div className='container text-white py-5'>
 
-            <div className="d-flex flex-column flex-md-row py-[64px]">
-                <div className='position-relative d-flex justify-center align-center'>
+            <div className="d-flex flex-column flex-md-row py-64">
+                <div className='position-relative d-flex justify-content-center align-center'>
                     <GradientCircle width={300} height={370}/>
                     <img className='position-absolute top-50 start-50 translate-middle' src={Logo} width={100} alt="logo" />
                 </div>
-                <div className='text-white d-flex flex-col justify-content-center text-center text-md-start'>
+                <div className='text-white d-flex flex-column justify-content-content-center text-center text-md-start'>
                     <p className='fs-5'>Hello world</p>
                     <p className='fs-2'>Judges a book
-                    by its <span className='text-[#7127BA]'>cover</span>...</p>
+                    by its <span className='text-portfolio-light'>cover</span>...</p>
                     <p className='fs-6'>Because if the cover does not impress you what else can?</p>
                 </div>
             </div>
 
-            <div className="px-0 px-md-[64px] pb-[64px]">
+            <div className="px-0 px-md-64 pb-64">
                 <p className='fs-2 fs-md-1 pb-[64px]'>I'm a Software Engineer.|</p>
                 <p className='fs-6 pb-2'>Currently, I'm a Software Engineer at <FontAwesomeIcon icon={faFacebook}/> Facebook,</p>
                 <p className='fs-6 pb-2'>A self-taught UI/UX designer, functioning in the industry for 3+ years now.</p>
                 <p className='fs-6 pb-2'>I make meaningful and delightful digital products that create an equilibrium between user needs and business goals.</p>
             </div>
 
-            <div className='px-0 px-md-[64px] pb-[64px]' id='project'>
-                <p className='fs-1 pb-[64px]'>My project</p>
+            <div className='px-0 px-md-64 pb-64' id='project'>
+                <p className='fs-1 pb-64'>My project</p>
 
-                <div className="position-relative mb-[128px] text-start">
-                    <p className='text-[#9857D3] fs-6'>Featured project</p>
+                <div className="position-relative mb-128 text-start">
+                    <p className='text-project fs-6'>Featured project</p>
                     <p className='fs-4'>Example project</p>
-                    <div className='mw-100 position-absolute start-0 start-md-10 start-xl-50 top-50 translate-middle-y d-inline-block z-0'>
+                    <div className='mw-100 position-absolute start-0 start-md-25 start-xl-50 top-50 translate-middle-y d-inline-block z-0'>
                         <GradientCircle width={702} height={620}/>
                         <img className='position-absolute top-50 start-50 translate-middle d-none d-md-block' src={Logo} width={100} alt="logo" />
                     </div>
-                    <div className='my-4 position-relative z-10 text-start d-flex justify-start' >
+                    <div className='my-4 position-relative z-10 text-start d-flex justify-content-start' >
                         <p className='p-4 bg-secondary rounded-3 w-100 w-md-50' style={{"--bs-bg-opacity": 0.2}}>A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more.</p>
                     </div>
-                    <div className='d-flex gap-3 justify-start'>
-                        <a target='_blank' href="https://github.com/bluez44/Monkeyjob-Frontend"><FontAwesomeIcon icon={faGithub} className='fs-3 me-4;'/></a>
-                        <a target='_blank' href="https://monkey-job.vercel.app/"><FontAwesomeIcon icon={faLaptopCode} className='fs-3 me-4;'/></a>
+                    <div className='d-flex gap-3 justify-content-start'>
+                        <a className='position-relative z-1' target='_blank' href="https://github.com/bluez44/Monkeyjob-Frontend"><FontAwesomeIcon icon={faGithub} className='fs-3 me-4;'/></a>
+                        <a className='position-relative z-1' target='_blank' href="https://monkey-job.vercel.app/"><FontAwesomeIcon icon={faLaptopCode} className='fs-3 me-4;'/></a>
                     </div>
                 </div>
 
-                <div className="position-relative my-[64px] text-end">
-                    <p className='text-[#9857D3] fs-6'>Featured project</p>
+                <div className="position-relative mb-128 text-end">
+                    <p className='text-project fs-6'>Featured project</p>
                     <p className='fs-4'>Example project</p>
-                    <div className='my-4 position-relative z-10 text-start d-flex justify-end' >
+                    <div className='my-4 position-relative z-10 text-start d-flex justify-content-end' >
                         <p className='p-4 bg-secondary rounded-3 w-100 w-md-50' style={{"--bs-bg-opacity": 0.2}}>A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more.</p>
                     </div>
                     <div className='mw-100 position-absolute end-0 end-md-25 end-xl-50 top-50 translate-middle-y d-inline-block z-0'>
                         <GradientCircle width={702} height={620}/>
                         <img className='position-absolute top-50 start-50 translate-middle d-none d-md-block' src={Logo} width={100} alt="logo" />
                     </div>
-                    <div className='d-flex gap-3 justify-end'>
-                        <a target='_blank' href="https://github.com/bluez44/Monkeyjob-Frontend"><FontAwesomeIcon icon={faGithub} className='fs-3 me-4;'/></a>
-                        <a target='_blank' href="https://monkey-job.vercel.app/"><FontAwesomeIcon icon={faLaptopCode} className='fs-3 me-4;'/></a>
+                    <div className='d-flex gap-3 justify-content-end'>
+                        <a className='position-relative z-1' target='_blank' href="https://github.com/bluez44/Monkeyjob-Frontend"><FontAwesomeIcon icon={faGithub} className='fs-3 me-4;'/></a>
+                        <a className='position-relative z-1' target='_blank' href="https://monkey-job.vercel.app/"><FontAwesomeIcon icon={faLaptopCode} className='fs-3 me-4;'/></a>
                     </div>
                 </div>
             </div>
 
-            <div className="px-[0px] pb-[64px]" id="skills">
+            <div className="px-0 pb-64" id="skills">
                 <p className="text-center fs-4">I'm currently looking to join a cross-functional team</p>
                 <p className="text-center fs-6">that values improving people's lives through accessible design </p>
 
-                <div className='d-flex gap-3 justify-center flex-wrap w-100 w-md-50 mx-0 mx-md-auto my-5'>
+                <div className='d-flex gap-3 justify-content-center flex-wrap w-100 w-md-50 mx-0 mx-md-auto my-5'>
                     {logoList.map((logo, index) => (
                         <LogoCircle key={index} width={30} height={30} LogoSrc={logo} />
                     ))}
                 </div>
 
-                <div className='d-flex justify-center position-relative'>
+                <div className='d-flex justify-content-center position-relative'>
                     <svg width="100%" height="800" viewBox="0 0 600 400">
                         <defs>
                             <linearGradient id="gradient-stroke" x1="0" y1="50" x2="600" y2="50" gradientUnits="userSpaceOnUse">
@@ -186,13 +186,13 @@ function Content() {
 
             </div>
 
-            <div id="contact">
-                <p className='fs-1 pb-[64px]'>My contact</p>
-                <p className='fs-6 w-100 w-md-50 pb-4'>I'm currently looking to join a cross-functional team that values improving people's lives
+            <div className='px-0 px-md-64 pb-64 text-center text-xl-start' id="contact">
+                <p className='fs-1 pb-64'>My contact</p>
+                <p className='fs-6 w-100 w-xl-50 pb-4'>I'm currently looking to join a cross-functional team that values improving people's lives
                 through accessible design. or have a project in mind? Let's connect.</p>
                 <p className='fs-5 pb-4'>vlqvinh444@gmail.com</p>
 
-                <div className='d-flex gap-5 justify-start'>
+                <div className='d-flex gap-5 justify-content-center justify-content-xl-start'>
                     <a href="https://www.facebook.com/bluez1404" target='_blank'>
                         <FontAwesomeIcon size="2x" icon={faFacebook} />
                     </a>

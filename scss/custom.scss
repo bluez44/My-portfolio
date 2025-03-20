@@ -1,0 +1,328 @@
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+
+$custom-colors: (
+  "portfolio": #11071F,
+  "portfolio-light": #7127BA,
+  "project": #9857D3,
+  "mobile-menu": #1a0b2e,
+
+);
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+@import "../node_modules/bootstrap/scss/variables-dark";
+@import "../node_modules/bootstrap/scss/maps";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/utilities";
+
+$utilities: map-merge(
+  $utilities, (
+    "width": map-merge(
+      map-get($utilities, "width"),
+      ( responsive: true ),
+    ),
+  )
+);
+
+$utilities: map-merge(
+  $utilities, (
+    "flex": map-merge(
+      map-get($utilities, "flex"),
+      ( responsive: true ),
+    ),
+  )
+);
+
+$utilities: map-merge(
+  $utilities, (
+    "position": map-merge(
+      map-get($utilities, "position"),
+      ( responsive: true ),
+    ),
+  )
+);
+
+$utilities: map-merge(
+  $utilities, (
+    "translate-middle": map-merge(
+      map-get($utilities, "translate-middle"),
+      ( responsive: true ),
+    ),
+  )
+);
+
+$utilities: map-merge(
+  $utilities, (
+    "background-color": map-merge(
+      map-get($utilities, "background-color"),
+      ( 
+        responsive: true 
+      ),
+    ),
+  )
+);
+
+$utilities: map-merge(
+  $utilities, (
+    "start": map-merge(
+      map-get($utilities, "start"),
+      ( 
+        responsive: true,
+        values: map-merge(
+          map-get(map-get($utilities, "start"), "values"),
+          (
+            10: 10%,
+            25: 25%,
+            75: 75%
+            ),
+        )
+      ),
+    ),
+  )
+);
+
+$utilities: map-merge(
+  $utilities, (
+    "end": map-merge(
+      map-get($utilities, "end"),
+      ( 
+        responsive: true,
+        values: map-merge(
+          map-get(map-get($utilities, "end"), "values"),
+          (25: 25%,
+          75: 75%),
+        )
+      ),
+    ),
+  )
+);
+
+$utilities: map-merge(
+  $utilities, (
+    "top": map-merge(
+      map-get($utilities, "top"),
+      ( 
+        responsive: true,
+        values: map-merge(
+          map-get(map-get($utilities, "top"), "values"),
+          (25: 25%,
+          75: 75%),
+        )
+     ),
+    ),
+  )
+);
+
+$utilities: map-merge(
+  $utilities, (
+    "margin": map-merge(
+      map-get($utilities, "margin"),
+      ( 
+        values: map-merge(
+          map-get(map-get($utilities, "margin"), "values"),
+          (64: 64px,
+          128: 128px),
+        )
+      ),
+    ),
+  )
+);
+
+$utilities: map-merge(
+  $utilities, (
+    "margin-y": map-merge(
+      map-get($utilities, "margin-y"),
+      ( 
+        values: map-merge(
+          map-get(map-get($utilities, "margin-y"), "values"),
+          (64: 64px,
+          128: 128px),
+        )
+      ),
+    ),
+  )
+);
+
+$utilities: map-merge(
+  $utilities, (
+    "margin-x": map-merge(
+      map-get($utilities, "margin-x"),
+      ( 
+        values: map-merge(
+          map-get(map-get($utilities, "margin-x"), "values"),
+          (64: 64px,
+          128: 128px),
+        )
+      ),
+    ),
+  )
+);
+
+$utilities: map-merge(
+  $utilities, (
+    "margin-top": map-merge(
+      map-get($utilities, "margin-top"),
+      ( 
+        values: map-merge(
+          map-get(map-get($utilities, "margin-top"), "values"),
+          (64: 64px,
+          128: 128px),
+        )
+      ),
+    ),
+  )
+);
+
+$utilities: map-merge(
+  $utilities, (
+    "margin-end": map-merge(
+      map-get($utilities, "margin-end"),
+      ( 
+        values: map-merge(
+          map-get(map-get($utilities, "margin-end"), "values"),
+          (64: 64px,
+          128: 128px),
+        )
+      ),
+    ),
+  )
+);
+
+$utilities: map-merge(
+  $utilities, (
+    "margin-bottom": map-merge(
+      map-get($utilities, "margin-bottom"),
+      ( 
+        values: map-merge(
+          map-get(map-get($utilities, "margin-bottom"), "values"),
+          (64: 64px,
+          128: 128px),
+        )
+      ),
+    ),
+  )
+);
+
+$utilities: map-merge(
+  $utilities, (
+    "margin-start": map-merge(
+      map-get($utilities, "margin-start"),
+      ( 
+        values: map-merge(
+          map-get(map-get($utilities, "margin-start"), "values"),
+          (64: 64px,
+          128: 128px),
+        )
+      ),
+    ),
+  ),
+);
+
+$utilities: map-merge(
+  $utilities, (
+    "padding": map-merge(
+      map-get($utilities, "padding"),
+      ( 
+        values: map-merge(
+          map-get(map-get($utilities, "padding"), "values"),
+          (64: 64px,
+          128: 128px),
+        )
+      ),
+    ),
+  )
+);
+
+$utilities: map-merge(
+  $utilities, (
+    "padding-y": map-merge(
+      map-get($utilities, "padding-y"),
+      ( 
+        values: map-merge(
+          map-get(map-get($utilities, "padding-y"), "values"),
+          (64: 64px,
+          128: 128px),
+        )
+      ),
+    ),
+  )
+);
+
+$utilities: map-merge(
+  $utilities, (
+    "padding-x": map-merge(
+      map-get($utilities, "padding-x"),
+      ( 
+        values: map-merge(
+          map-get(map-get($utilities, "padding-x"), "values"),
+          (64: 64px,
+          128: 128px),
+        )
+      ),
+    ),
+  )
+);
+
+$utilities: map-merge(
+  $utilities, (
+    "padding-top": map-merge(
+      map-get($utilities, "padding-top"),
+      ( 
+        values: map-merge(
+          map-get(map-get($utilities, "padding-top"), "values"),
+          (64: 64px,
+          128: 128px),
+        )
+      ),
+    ),
+  )
+);
+
+$utilities: map-merge(
+  $utilities, (
+    "padding-end": map-merge(
+      map-get($utilities, "padding-end"),
+      ( 
+        values: map-merge(
+          map-get(map-get($utilities, "padding-end"), "values"),
+          (64: 64px,
+          128: 128px),
+        )
+      ),
+    ),
+  )
+);
+
+$utilities: map-merge(
+  $utilities, (
+    "padding-bottom": map-merge(
+      map-get($utilities, "padding-bottom"),
+      ( 
+        values: map-merge(
+          map-get(map-get($utilities, "padding-bottom"), "values"),
+          (64: 64px,
+          128: 128px),
+        )
+      ),
+    ),
+  )
+);
+
+$utilities: map-merge(
+  $utilities, (
+    "padding-start": map-merge(
+      map-get($utilities, "padding-start"),
+      ( 
+        values: map-merge(
+          map-get(map-get($utilities, "padding-start"), "values"),
+          (64: 64px,
+          128: 128px),
+        )
+      ),
+    ),
+  ),
+);
+
+@import "../node_modules/bootstrap/scss/utilities/api";
+@import "../node_modules/bootstrap/scss/bootstrap.scss";

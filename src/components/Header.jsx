@@ -11,17 +11,18 @@ function Header() {
   }
 
   return (
-    <header className='position-fixed w-100 z-555'>
+    <header className='position-fixed w-100 z-3'>
         <nav className='container text-white d-flex align-items-center justify-content-between py-3 py-md-0'>
-            <div className='flex-1'>
+            <div className='flex-grow-1 flex-shrink-1'>
                 <img src={Logo} alt="logo" />
             </div>
             
-            <div className='d-flex flex-column align-items-end d-md-block flex-1'>
+            <div className='d-flex flex-column align-items-end d-md-block flex-grow-1 flex-shrink-1'>
               <FontAwesomeIcon icon={faBars} size={"xl"} className='d-md-none' onClick={handleMenu}/>
-              <div className='position-absolute position-md-relative top-100 start-0 end-0 container px-0 d-flex justify-content-end'>
+              <div className='position-absolute position-md-relative top-100 start-0 end-0 px-0 d-flex justify-content-end'>
                 <ul 
-                  className={`${isMenuOpen ? 'd-block' : 'd-none'} position-md-relative d-md-flex flex-md-row justify-content-md-between fs-6 p-0 text-center bg-[#1a0b2ecc] bg-md-transparent w-100`}
+                  className={`${isMenuOpen ? 'd-block' : 'd-none'} list-unstyled position-md-relative d-md-flex flex-md-row justify-content-md-between fs-6 p-0 text-center bg-mobile-menu bg-md-transparent w-100`}
+                  style={{'--bs-bg-opacity': 0.8}}
                   onClick={handleMenu}
                 >
                     <li className='w-100'><a className='group_link py-4 px-2 w-100 d-block' href="#">Home</a></li>
