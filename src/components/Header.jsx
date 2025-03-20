@@ -11,7 +11,7 @@ function Header() {
   }
 
   return (
-    <header className='position-fixed w-100 z-3'>
+    <header className='position-fixed w-100 z-3 shadow'>
         <nav className='container text-white d-flex align-items-center justify-content-between py-3 py-md-0'>
             <div className='flex-grow-1 flex-shrink-1'>
                 <img src={Logo} alt="logo" />
@@ -19,7 +19,7 @@ function Header() {
             
             <div className='d-flex flex-column align-items-end d-md-block flex-grow-1 flex-shrink-1'>
               <FontAwesomeIcon icon={faBars} size={"xl"} className='d-md-none' onClick={handleMenu}/>
-              <div className='position-absolute position-md-relative top-100 start-0 end-0 px-0 d-flex justify-content-end'>
+              <div className='position-absolute z-2 position-md-relative top-100 start-0 end-0 px-0 d-flex justify-content-end'>
                 <ul 
                   className={`${isMenuOpen ? 'd-block' : 'd-none'} list-unstyled position-md-relative d-md-flex flex-md-row justify-content-md-between fs-6 p-0 text-center bg-mobile-menu bg-md-transparent w-100`}
                   style={{'--bs-bg-opacity': 0.8}}
